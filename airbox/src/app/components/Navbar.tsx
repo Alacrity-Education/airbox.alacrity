@@ -3,26 +3,31 @@ import React from "react";
 
 export default function Navbar() {
   return (
-    <nav className="realative">
-        <div className="container mx-auto flex justify-between align-center py-4 bg-base-200 shadow-sm z-50 fixed inset-0">
-            <div className="text-primary flex align-center justify-center">
-                Alacrity | Airbox
-            </div>
-            <ul className="flex align-center justify-center">
-                <li className="mx-4">
-                    <a href="#">Stations</a>
-                </li>
-                <li className="mx-4">
-                    <a href="#">Map</a>
-                </li>
-                <li className="mx-4">
-                    <a href="#">Features</a>
-                </li>
-                <li className="mx-4">
-                    <a href="#">Community</a>
-                </li>
-            </ul>
-        </div>
+    <nav className="relative w-full bg-base-200 flex items-center justify-center shadow-sm z-[50]">
+      <div className="container flex items-center justify-between py-4">
+        <div className="text-xl font-bold text-primary">Alacrity
+        <span className="text-base-content"> | </span><span className="text-secondary">AirBox</span></div>
+        <ul className="flex space-x-10 text-lg font-bold">
+          <li>
+            <a href="#">Stations</a>
+          </li>
+          <li>
+            <a href="#">Map</a>
+          </li>
+          <li>
+            <a href="#">API</a>
+          </li>
+          <li>
+            <a href="#">DOCS</a>
+          </li>
+          <li>
+            <a href="#">Push Notifications</a>
+          </li>
+          <li className="bg-secondary px-2 rounded-xl shadow-sm">
+            <a href="#">Community</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 }
