@@ -10,8 +10,8 @@ const textAnimation = {
 
 export default function Hero() {
   return (
-    <div className="relative h-screen w-screen flex flex-col items-center justify-center">
-        <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center z-[-1] overflow-x-hidden">
+    <div className="relative h-screen w-screen flex flex-col items-center justify-center overflow-x-hidden">
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[-1] ">
             <AnimatedLogo />
         </div>
 
@@ -27,7 +27,7 @@ export default function Hero() {
 const AnimatedLogo = () => {
   return (
     <svg
-      className="w-full h-full scale-200 z-5"
+      className="w-full h-full scale-600 z-5"
       viewBox="0 0 6930 6930"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
