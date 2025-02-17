@@ -2,32 +2,35 @@
 
 import { motion } from "framer-motion";
 import React from "react";
+import { IonIcon } from "@ionic/react";
+import { arrowDownOutline } from "ionicons/icons";
 
-const textAnimation = {
-  hidden: { x: -300, opacity: 0 },
-  visible: { x: 0, opacity: 1 },
-};
 
 export default function Hero() {
   return (
-    <div className="relative h-screen w-screen flex flex-col items-center justify-center overflow-x-hidden">
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[-1] ">
-            <AnimatedLogo />
-        </div>
-
-  {/* Container for the two-column layout */}
-  <div className="relative grid grid-cols-2 gap-4 w-full px-4 max-w-md">
-
-    {/* Right Column - SVG logo with left-to-right spin effect */}
-  </div>
+    <div className="relative flex flex-col items-center justify-center h-[calc(100vh-72px)] w-screen overflow-x-hidden">
+    <div className="svg-center z-[-1] pr-[10px]">
+        <AnimatedLogo />
+    </div>
+    
+    <div className="absolute bottom-35 left-1/2 transform -translate-x-1/2 z-[1]">
+        <IonIcon icon={arrowDownOutline} className="text-[#fff] text-7xl animate-bounce" />
+    </div>
+    
+    <div className="flex-col items-center justify-center ">
+      <h1 className="flex items-center justify-center text-8xl font-bold text-white tracking-widest">AIR <span className="text-base-content">BOX</span></h1>
+      <h3 className="text-center uppercase tracking-widest font-bold text-lg">all out for the
+        <span className="text-secondary"> air</span> you <span>breathe</span></h3>
+    </div>
 </div>
+
   );
 }
 
 const AnimatedLogo = () => {
   return (
     <svg
-      className="w-full h-full scale-600 z-5"
+    className="scale-550 w-full h-full z-5"
       viewBox="0 0 6930 6930"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
