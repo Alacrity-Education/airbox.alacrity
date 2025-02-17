@@ -9,7 +9,7 @@ import { arrowDownOutline } from "ionicons/icons";
 export default function Hero() {
   return (
     <div className="relative flex flex-col items-center justify-center h-[calc(100vh-72px)] w-screen overflow-x-hidden">
-    <div className="svg-center z-[-1] pr-[10px]">
+    <div className="svg-center z-[-1] pr-[8px]">
         <AnimatedLogo />
     </div>
     
@@ -18,11 +18,36 @@ export default function Hero() {
     </div>
     
     <div className="flex-col items-center justify-center ">
-      <h1 className="flex items-center justify-center text-8xl font-bold text-white tracking-widest">AIR <span className="text-base-content">BOX</span></h1>
-      <h3 className="text-center uppercase tracking-widest font-bold text-lg">all out for the
-        <span className="text-secondary"> air</span> you <span>breathe</span></h3>
+      <h1 className="flex items-center justify-center text-6xl md:text-8xl font-bold text-white tracking-widest">AIR <span className="text-base-content">BOX</span></h1>
+      <h3 className="text-center uppercase tracking-widest font-bold text-md md:text-lg">all out for the
+        <span className="text-[#07CA89]"> air</span> you <span className="text-[#07CA89]">breathe</span></h3>
     </div>
+
+    {/* Floating Texts */}
+    <div className="absolute inset-0 pointer-events-none">
+        <p className="absolute text-white text-2xl sm:text-2xl md:text-4xl font-bold opacity-40 animate-float top-[20%] left-[10%] lg:left-[20%] xl:left-[25%]">PM10</p>
+        <p className="absolute text-white text-2xl sm:text-2xl md:text-4xl font-bold opacity-40 animate-float top-[25%] right-[10%] lg:right-[20%] xl:right-[25%]">CO2</p>
+        <p className="absolute text-white text-2xl sm:text-2xl md:text-4xl font-bold opacity-40 animate-float bottom-[30%] left-[10%] lg:left-[20%] xl:left-[25%]">PM3.5</p>
+        <p className="absolute text-white text-2xl sm:text-2xl md:text-4xl font-bold opacity-40 animate-float bottom-[20%] right-[10%] lg:right-[20%] xl:right-[25%]">TEMP</p>
+        <p className="absolute text-white text-2xl sm:text-2xl md:text-4xl font-bold opacity-40 animate-float top-[8%] left-1/2 transform -translate-x-1/2">DAMP</p>
+    </div>
+
+    {/* Tailwind Animation for Floating Effect */}
+    <style jsx>{`
+        @keyframes float {
+            0% { transform: translateY(0); opacity: 0.4; }
+            50% { transform: translateY(-10px); opacity: 0.6; }
+            100% { transform: translateY(0); opacity: 0.4; }
+        }
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+    `}</style>
 </div>
+
+
+
+
 
   );
 }

@@ -28,33 +28,34 @@ const Navbar = () => {
           </svg>
         </button>
         <div className={`${isOpen ? "block" : "hidden"} w-full md:block md:w-auto`} id="navbar-default">
-          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
-            <li>
-              <a href="#" className="block py-2 px-3 text-gray-900 font-bold rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:text-white hover:text-primary">
-                Stations
-              </a>
-            </li>
-            <li>
-              <a href="#" className="font-bold block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:text-white hover:text-primary">
-                Map
-              </a>
-            </li>
-            <li>
-              <a href="#" className="font-bold block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:text-white hover:text-primary">
-                API
-              </a>
-            </li>
-            <li>
-              <a href="#" className="font-bold block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:text-white hover:text-primary">
-                Email System (new)
-              </a>
-            </li>
-            <li>
-              <a href="#" className="font-bold block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:text-white hover:text-primary">
-                Community
-              </a>
-            </li>
-          </ul>
+        <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-base-200 rounded-2xl">
+  <li>
+    <a href="#" className="block py-2 px-3 text-gray-900 font-bold rounded-sm hover:bg-gray-100  md:border-0 md:p-0 dark:text-white hover:text-primary">
+      Stations
+    </a>
+  </li>
+  <li>
+    <a href="#" className="font-bold block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100  md:border-0 md:p-0 dark:text-white hover:text-primary">
+      Map
+    </a>
+  </li>
+  <li>
+    <a href="#" className="font-bold block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100  md:border-0 md:p-0 dark:text-white hover:text-primary">
+      API
+    </a>
+  </li>
+  <li>
+    <a href="#" className="font-bold block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100  md:border-0 md:p-0 dark:text-white hover:text-primary">
+      Email System (new)
+    </a>
+  </li>
+  <li>
+    <a href="#" className="font-bold block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100  md:border-0 md:p-0 dark:text-white hover:text-primary">
+      Community
+    </a>
+  </li>
+</ul>
+
         </div>
       </div>
     </nav>
