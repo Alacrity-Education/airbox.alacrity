@@ -9,7 +9,7 @@ import { arrowDownOutline } from "ionicons/icons";
 export default function Hero() {
   return (
     <div className="relative flex flex-col items-center justify-center h-[calc(100vh-72px)] w-screen overflow-hidden">
-    <div className="svg-center z-[-1] pr-[8px]">
+    <div className="svg-center z-[-3] pr-[8px]">
         <AnimatedLogo />
     </div>
     
@@ -24,7 +24,7 @@ export default function Hero() {
     </div>
 
     {/* Floating Texts */}
-    <div className="absolute inset-0 pointer-events-none">
+    <div className="absolute inset-0 pointer-events-none z-[-2]">
         <p className="absolute text-white text-2xl sm:text-2xl md:text-4xl font-bold opacity-40 animate-float top-[20%] left-[10%] lg:left-[20%] xl:left-[25%]">PM10</p>
         <p className="absolute text-white text-2xl sm:text-2xl md:text-4xl font-bold opacity-40 animate-float top-[25%] right-[10%] lg:right-[20%] xl:right-[25%]">CO2</p>
         <p className="absolute text-white text-2xl sm:text-2xl md:text-4xl font-bold opacity-40 animate-float bottom-[30%] left-[10%] lg:left-[20%] xl:left-[25%]">PM3.5</p>

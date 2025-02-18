@@ -28,7 +28,7 @@ const Navbar = () => {
           </svg>
         </button>
         <div className={`${isOpen ? "block" : "hidden"} w-full md:block md:w-auto`} id="navbar-default">
-        <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-base-200 rounded-2xl">
+        <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border md:flex-row md:space-x-8 md:mt-0 md:border-0 bg-base-200 rounded-2xl z-[100]">
   <li>
     <a href="#" className="block py-2 px-3 text-gray-900 font-bold rounded-sm   md:border-0 md:p-0 dark:text-white hover:text-primary">
       Stations
