@@ -8,12 +8,12 @@ import { arrowDownOutline } from "ionicons/icons";
 
 export default function Hero() {
   return (
-    <div className="relative flex flex-col items-center justify-center h-[calc(100vh-72px)] w-screen overflow-x-hidden">
+    <div className="relative flex flex-col items-center justify-center h-[calc(100vh-72px)] w-screen overflow-hidden">
     <div className="svg-center z-[-1] pr-[8px]">
         <AnimatedLogo />
     </div>
     
-    <div className="absolute bottom-35 left-1/2 transform -translate-x-1/2 z-[1]">
+    <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-[1]">
         <IonIcon icon={arrowDownOutline} className="text-[#fff] text-7xl animate-bounce" />
     </div>
     
@@ -55,7 +55,7 @@ export default function Hero() {
 const AnimatedLogo = () => {
   return (
     <svg
-    className="scale-550 w-full h-full z-5"
+    className="scale-500 w-full h-full z-5"
       viewBox="0 0 6930 6930"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
